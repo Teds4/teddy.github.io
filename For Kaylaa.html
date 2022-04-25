@@ -1,0 +1,172 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="asd.css" rel="stylesheet" type="text/css" /><script src="https://ayang.likeadream.repl.co/script.js"></script>
+<head>
+
+</head>
+<body><div id="bodyblur"><img src="https://cdn.pixabay.com/photo/2017/08/08/14/39/birthday-2611564_960_720.jpg" width="100%" height="100%"/></div>
+
+<!-- Isi Konten --><div id='Content'>
+<div class="image"><img src="https://c.tenor.com/i09NCrfMbLQAAAAM/%E5%B0%8F%E7%86%8A%E4%B8%8E%E5%B0%8F%E7%86%8A%E7%8C%AB.gif" width="130px" height="130px"/></div><!--<div id="sp1"></div>-->
+<div><blockquote><p id="text"></p><p id="text2"></p><p onClick="popup();" id="tlink">[ Klik Aku Plisss ! ]</p></blockquote></div></div>
+
+<div id="tombo" class="content2"><div id="lope" class="ct1"><label class='lovein' onClick="showDiv();nonTo();">&#10084;&#65039;</label></div>
+  <p style="opacity:.7;font-size:12px;color:white">Sentuh LOVE di atas</p>
+</div>
+
+<script>
+  function nonTo() {document.getElementById('tombo').style.display = "none";} function showTo() {document.getElementById('tombo').style.display = "block";}
+  function nonFo() {document.getElementById('idfoto').style.display = "none";} function showFo() {document.getElementById('idfoto').style.display = "block";}
+  function nonDiv() {document.getElementById('Content').style.display = "none";} function showDiv() {ketik();document.getElementById('Content').style.opacity = "1";document.getElementById('Content').style.margin = "0";}
+  
+  var i=0,text;text = ""
+  var u=0,text2;text2 = ""
+  
+  function ketik() {if(i<text.length){document.getElementById("text").innerHTML += text.charAt(i);i++;setTimeout(ketik,100);}
+    if(i==text.length){document.getElementById("text").innerHTML = text + emotnama;ketikk();}
+  }
+  function ketikk() {if(u<text2.length){document.getElementById("text2").innerHTML += text2.charAt(u);u++;setTimeout(ketikk,200);}
+    if(u==text2.length){
+    document.getElementById('tlink').style.display = "block";
+    }
+  }
+  </script>
+
+<script type="text/javascript">
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('HBD kay.mp3');audio.play();}
+
+            const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',});
+            const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,});
+            const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 3000, timerProgressBar: true,});
+            
+            async function mulaitanya(){
+            	var { isConfirmed: tanyawal } = await swals.fire({title: `Hai Kaylaa !`, text: `Ciee yang udah 20 tahun`, imageUrl: 'https://s-media-cache-ak0.pinimg.com/originals/9e/a7/2e/9ea72ef078139ced289852e8a4ea0c5c.gif', imageWidth: 120, imageHeight: 120,
+                });{nama = 'Kayla';kuis();play();}
+            }
+
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu',
+                    input: 'text',
+                    imageUrl: 'https://i.postimg.cc/vDFQZzhM/yyy.gif', imageWidth: 120, imageHeight: 120,
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });
+                if(nama && nama.length < 11){
+                	window.nama = nama;
+                    kuis();                                 
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+                    mulai();
+                }
+            }
+            async function kuis(){
+                      text = "Dear, " + nama + ".    ";
+                      emotnama = "&#129419;";
+                      text2 = "Selamat ulang tahun yaa, semoga sehat selalu, panjang umur, lancar rezekinya, dan yang paling utama bahagia di dunia dan akhirat. aamiiin. Tetap semangat yaa, jangan nyerah, you can get through all of this, cause You're special ^_^" ;
+                      pilihwarna();
+             }
+             mulaitanya();
+</script>
+<script>
+maupilih = "Pilih yang mana ?";
+warnaA = "Bulan";
+warnaB = "Bintang";
+vyakin = "Yakin";
+vganti = "Ganti";
+emotketawa = "&#129315;";
+emotangel = "&#128519;" ;
+emotsenyum = "&#128522;" ;
+
+teksatas = "Yeayyy!";
+teksatasoke = "Okay !" + emotsenyum;
+teksakhiroke = "Sekarang liat ini yaa :)" ;
+teksbawahA = "Kamu pilih Bulan, berarti kamu orang yang baik, kuat pendirian, ga mudah nyerah dan kamu akan bahagia dengan apapun yang kamu punya !";
+teksbawahAA = "yakin pilih Bulan ?";
+teksbawahAAA = "Atau mau ganti aja ?";
+teksbawahB = "Kamu pilih Bintang, berarti kamu orang yang baik, kuat pendirian, ga mudah nyerah dan kamu akan bahagia dengan apapun yang kamu punya !";
+teksbawahBB = "yakin pilih Bintang ?";
+teksbawahBBB = "Atau mau ganti aja ?";
+
+teksgantiA = "Oke, memilih Bintang!";
+teksgantiAA = "Sama aja sih sebenernya hehe, cuma beda bentuk aja" + emotketawa;
+teksgantiB = "Oke, memilih Bulan!";
+teksgantiBB = "Sama aja sih sebenernya hehe, cuma beda bentuk aja" + emotketawa;
+
+gambar1 = "https://img.wattpad.com/a02c4ca04f93d30ca435ae0b517463598030f065/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f666e4c46524f57346933746b64413d3d2d313033333035363730312e313636663462393064303239373430353131373834343538353138372e676966";
+gambar2 = "https://c.tenor.com/aKFaZBrZFYcAAAAC/excited-spin.gif";
+gambar3 = "https://c.tenor.com/JY2fRmOGB1UAAAAC/cheer-happy.gif";
+
+async function pilihwarna(){
+  var { isConfirmed: warna } = await swals.fire({
+  title: nama + ' ' + maupilih,
+  imageUrl: '' + gambar1, imageWidth: 120, imageHeight: 120,
+  showCancelButton: true,
+  confirmButtonText: '' + warnaA,
+  cancelButtonText: '' + warnaB,
+});
+if(warna){
+    await swals.fire({
+      title: '' + teksatas,
+      text: '' + teksbawahA,
+      imageUrl: '' + gambar2, imageWidth: 120, imageHeight: 120,
+    });
+    var { isConfirmed: warna2 } = await swals.fire({
+    title: nama + ' ' + teksbawahAA, 
+    text: '' + teksbawahAAA, showCancelButton: true,
+    confirmButtonText: '' + vyakin,
+    cancelButtonText: '' + vganti,
+});
+if(warna2){
+    await swals.fire({
+      title: '' + teksatasoke,
+      text: '' + teksakhiroke,
+    });
+    showDiv();
+  } else {
+    await swals.fire({
+      title: '' + teksgantiA,
+      html: '' + teksgantiAA,
+      imageUrl: '' + gambar3, imageWidth: 120, imageHeight: 120,
+    });
+    showDiv();
+}
+//Selingan
+  } else {
+    await swals.fire({
+      title: '' + teksatas,
+      text: '' + teksbawahB, 
+      imageUrl: '' + gambar2, imageWidth: 120, imageHeight: 120,
+    });
+    var { isConfirmed: warna2 } = await swals.fire({
+    title: nama + ' ' + teksbawahBB, 
+    text: '' + teksbawahBBB, showCancelButton: true,
+    confirmButtonText: '' + vganti,
+    cancelButtonText: '' + vyakin,
+});
+if(warna2){    
+    await swals.fire({
+      title: '' + teksgantiB,
+      html: '' + teksgantiBB,
+      imageUrl: '' + gambar3, imageWidth: 120, imageHeight: 120,
+    });
+    showDiv();
+  } else {
+    await swals.fire({
+      title: '' + teksatasoke,
+      text: '' + teksakhiroke,
+    });
+    showDiv();
+}
+}
+}
+async function popup(){
+	await swals.fire({
+      title: 'All the pretty words shine for u',
+      imageUrl: 'kayyy.jpg', imageWidth: 300, imageHeight: 400,
+    });
+}
+</script>
+</body>
+</html>
